@@ -62,9 +62,9 @@ def mydownload(my_url):
 
 if __name__ == '__main__':
     # 输入最终的文件名，不用后缀，会自动把webm通过FFmpeg转换成MP3
-    my_dl_name = 'Dr. Dre ft. Snoop Dogg - Still D.R.E.'
+    my_dl_name = 'Coldplay - Hymn For The Weekend'
     # 输入你要下载的youtube的url
-    my_dl_url = 'https://www.youtube.com/watch?v=_CL6n0FJZpk'
+    # my_dl_url =
 
     ydl_opts = {}
     # 下载视频加音频（有些高清格式没有配音频，只能下载视频）
@@ -75,4 +75,4 @@ if __name__ == '__main__':
     ydl_opts['outtmpl'] = my_dl_name+'.%(ext)s'
     ydl_opts['progress_hooks'] = [my_hook]
     ydl_opts['logger'] = MyLogger()
-    mydownload(my_dl_url)
+    mydownload('https://www.youtube.com/watch?v=YykjpeuMNEk')
